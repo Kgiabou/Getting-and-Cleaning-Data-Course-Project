@@ -43,7 +43,6 @@ all_data <- contains all the data which are put togegher with a row binding
 ## Find mean or std words in the column names and rename the columns
 cols <- conatins a vector with the positions of columns to keep
 
-## If reshape2 package is not present install it and load it
 ### Convert wide format data to long format
 longData <- transform data in long format using "Subjects", "Activity" asa ID variables
 
