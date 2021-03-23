@@ -1,8 +1,9 @@
 # Getting-and-Cleaning-Data-Course-Project
 
-The purpose of this project assignement is to combine, transform, clean and construct a tidy dataset.
+The purpose of this project assignement is to combine, transform, clean and construct a tidy dataset
+from specific data. It is not general to apply to different forms of data.
 
-# The run_analysis.R script does the following:
+ The run_analysis.R script does the following:
 
 1. Merges the training and the test sets to create one data set.
 2. Extracts only the measurements on the mean and standard deviation for each measurement. 
