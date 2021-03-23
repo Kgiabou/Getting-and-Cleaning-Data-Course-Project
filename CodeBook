@@ -1,0 +1,12 @@
+## Run_analysis.R guide
+
+This file describes the variables, the data, and any transformations or work that can be performed to clean up the data.
+
+# Data coolection
+Data for this script can be downloaded from:
+https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+
+A description of the dataset can be found:
+http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+
+# 
