@@ -36,11 +36,11 @@ feature <- variables names for each measurement
 Atrain <- column bind all the information together for the training dataset
 Atest  <- column bind all the information together for the test dataset
 
-## Combine the training and testing data together
+### Combine the training and testing data together
 
 all_data <- contains all the data which are put togegher with a row binding
 
-## Find mean or std words in the column names and rename the columns
+### Find mean or std words in the column names and rename the columns
 cols <- conatins a vector with the positions of columns to keep
 
 ### Convert wide format data to long format
@@ -50,5 +50,5 @@ longData <- transform data in long format using "Subjects", "Activity" asa ID va
 
 avData <- contains the average value of each measurement for each subject and activity
 
-## write the tidy dataset as a text delimited file
+### write the tidy dataset as a text delimited file
 
