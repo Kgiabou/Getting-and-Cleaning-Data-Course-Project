@@ -64,4 +64,5 @@ longData <- melt(all_d, id.vars = c("Subjects", "Activity"), na.rm = TRUE)
 ### value of each measurement for each subject and activity
 avData <- as_tibble(dcast(longData, Subjects + Activity ~ variable, fun=mean))
 
+### Export dataset as a .txt (tab dlimited) file
 write.table(avData, "AverageData.txt", row.names = FALSE, quote = FALSE, col.names = TRUE, sep="\t")
