@@ -13,7 +13,7 @@ data <- download.file("https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfi
 data2<- unzip("./Course Assignment/wearable.zip", files=NULL, exdir = "./Course Assignment")
 
 ### Set working directory
-setwd("./Getting and Cleaning Data/Course Assignment/UCI HAR Dataset")
+setwd("./Course Assignment/UCI HAR Dataset")
 
 ### Import training data-sets
 X_train <- as_tibble(read.table("./train/X_train.txt"))
@@ -62,4 +62,6 @@ longData <- melt(all_d, id.vars = c("Subjects", "Activity"), na.rm = TRUE)
 
 ### Reshape data into a tidy data-set taking the average 
 ### value of each measurement for each subject and activity
-avData <- dcast(longData, Subjects + Activity ~ variable, fun=mean)
+avData <- as_tibble(dcast(longData, Subjects + Activity ~ variable, fun=mean))
+
+write.table(avData, "AverageData.txt", row.names = FALSE, quote = FALSE, col.names = TRUE, sep="\t")
